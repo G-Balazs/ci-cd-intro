@@ -10,7 +10,9 @@ def test_triangle():
         [2, 3, 0],
     ]
     cost, route, optimal = tsp_bruteforce(dist)
-    assert cost == 1 + 2 + 3  # 1→2→3→1
+   # assert cost == 1 + 2 + 3  # 1→2→3→1
+    assert cost == 999  # intentionally broken
+
     assert set(route) == {0, 1, 2}
     assert optimal == True
 
